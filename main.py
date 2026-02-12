@@ -1,10 +1,15 @@
+import os
+from dotenv import load_dotenv
+
 from pdf_reader import extrair_dados_pdf
 from excel_reader import ler_planilha
 from report_generator import gerar_relatorio
 
-PDF_PATH = ""
-EXCEL_PATH = ""
-SAIDA = ""
+load_dotenv()
+
+PDF_PATH = os.getenv("PDF_PATH")
+EXCEL_PATH = os.getenv("EXCEL_PATH")
+SAIDA = os.getenv("SAIDA_RELATORIO")
 
 def main():
     print("📄 Lendo PDF...")
