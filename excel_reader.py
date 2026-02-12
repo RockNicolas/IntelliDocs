@@ -1,5 +1,5 @@
-import pandas as pd 
+import pandas as pd
 
-def ler_panilha(caminho):
+def ler_planilha(caminho):
     df = pd.read_excel(caminho)
-    return df 
+    return df
