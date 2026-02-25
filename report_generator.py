@@ -1,4 +1,4 @@
-from reportlab.pdfbase import canvas 
+from reportlab.pdfgen import canvas
 
 def gerar_relatorio(texto, caminho_saida):
     c = canvas.Canvas(caminho_saida)

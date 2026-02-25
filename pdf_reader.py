@@ -1,7 +1,7 @@
-import pdfplumber 
+import pdfplumber
 
 def extrair_dados_pdf(caminho):
-    texto_local = ""
+    texto_total = ""
 
     with pdfplumber.open(caminho) as pdf:
         for pagina in pdf.pages:
@@ -9,4 +9,4 @@ def extrair_dados_pdf(caminho):
             if texto:
                 texto_total += texto + "\n"
 
-    return texto_local
+    return texto_total
