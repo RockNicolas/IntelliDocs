@@ -36,3 +36,6 @@ relatorios/
 # Logs
 # =========================
 *.log
+
+# Arquivos gerados
+arquivos/
